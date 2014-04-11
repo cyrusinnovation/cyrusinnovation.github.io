@@ -19,7 +19,7 @@ You don't have to rebuild and redeploy a service (or your entire system) wheneve
 
 Don't imagine, though, that Computation Engine will let business people specify computations themselves, as some rules engines claim to allow. The expression language that Computation Engine understands is Scala, and using this library requires not only knowing how to write Scala code to express the computations, but also how to instantiate computations. A user will need to have a fair amount of tech-savvy to use this library. Computation Engine is not only not a Business-Writable DSL, it is not even a Business-Readable DSL.
 
-Computation Engine has significant implications on how you write your code. The beginning of the chain of computation takes in a Scala map of Any -> Any, and the ultimate result is a similar map. Abandon all type safety ye who enter here!
+Computation Engine has significant implications on how you write your code. The beginning of the chain of computation takes in a Scala map of `Any -> Any`, and the ultimate result is a similar map. Abandon all type safety ye who enter here!
 
 The advantage of removing type constraints is that it allows computations to be specified on any arbitrary subset of the incoming data. For any given computation, one has to know that certain values in the data map are of certain types, that some are integers and others are strings, for example. But the incoming data map can combine values of many different types, and the results of computations can add values of new types to the map, without facing the wrath of the type checker. (This, I think, is what Rich Hickey means when he says "let data be data.")
 
