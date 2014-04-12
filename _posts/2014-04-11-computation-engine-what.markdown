@@ -34,9 +34,9 @@ The approach taken by Computation Engine is not entirely flexible, of course. Yo
 
 Computation Engine is friendlier to the functional programming paradigm than to OO. Computations are intended to be stateless; the default security configuration for the Scala Script Engine tries to restrict the classes that can be used to ones that have no side effects. You can get around this restriction by providing your own security configuration, but it's not recommended. Testing computations is hard enough without having to worry about verifying changes in state.
 
-Besides tools for testing, the roadmap for Computation Engine envisions providing a library for reading rules from persistent storage, as well as editing tools for authoring, persisting, and publishing rules. 
+Besides tools for testing, the roadmap for Computation Engine envisions providing a library for reading rules from persistent storage, as well as editing tools for authoring, persisting, and publishing rules. Stay tuned for developments.
 
-Enjoy!
+In the meantime, enjoy!
 
 [rules-engine]:    http://martinfowler.com/bliki/RulesEngine.html
 [computation-engine]:    http://github.com/cyrusinnovation/computation-engine
